@@ -1,0 +1,115 @@
+{
+    "services": {
+        "geo": {
+            "daily": {
+                "locationiq.com": {
+                    "name": "locationiq.com",
+                    "http": { "method": "GET" },
+                    "count": 5000,
+                    "url": "https://eu1.locationiq.com/v1/",
+                    "key": {
+                        "name": "key",
+                        "value": "<API_KEY>"
+                    },
+                    "endpoints": {
+                        "search": { "name": "search", "params": { "q": null, "format": "json", "accept-language": "native" } }, 
+                        "reverse": { "name": "reverse", "params": { "lon": null, "lat": null, "format": "json", "accept-language": "native" } }, 
+                        "autocomplete": { "name": "autocomplete", "params": { "q": null, "format": "json", "accept-language": "native" } }
+                    }
+                },
+                "geokeo.com": {
+                    "name": "geokeo.com",
+                    "http": { "method": "GET" },
+                    "count": 2500,
+                    "url": "https://geokeo.com/geocode/v1/",
+                    "key": {
+                        "name": "api",
+                        "value": "<API_KEY>"
+                    },
+                    "endpoints": {
+                        "search": { "name": "search.php", "params": { "q": null, "format": "json" } }, 
+                        "reverse": { "name": "reverse.php", "params": { "lng": null, "lat": null, "format": "json" } }
+                    }
+                }
+            },
+            "monthly": {
+                "geocodify.com": {
+                    "name": "geocodify.com",
+                    "http": { "method": "GET" },
+                    "count": 30000,
+                    "url": "https://api.geocodify.com/v2/",
+                    "key": {
+                        "name": "api_key",
+                        "value": "<API_KEY>"
+                    },
+                    "endpoints": {
+                        "search": { "name": "geocode", "params": { "q": null } }, 
+                        "reverse": { "name": "reverse", "params": { "lng": null, "lat": null } }, 
+                        "searchparse": { "name": "geoparse", "params": { "q": null } }, 
+                        "autocomplete": { "name": "autocomplete", "params": { "q": null } }, 
+                        "parse": { "name": "parse", "params": { "q": null } }
+                    }
+                }
+            }
+        }, 
+        "translate": {
+            "always": {
+                "libretranslate.de": {
+                    "name": "libretranslate.de",
+                    "http": { 
+                        "method": "POST",
+                        "headers": [ "Content-type: application/x-www-form-urlencoded" ]
+                    },
+                    "url": "https://libretranslate.de/",
+                    "endpoints": {
+                        "translate": { "name": "translate", "params": { "q": null, "source": null, "target": null, "format": "text", "api_key": "" } }
+                    }
+                },
+                "translate.argosopentech.com": {
+                    "name": "translate.argosopentech.com",
+                    "http": { 
+                        "method": "POST",
+                        "headers": [ "Content-type: application/x-www-form-urlencoded" ]
+                    },
+                    "url": "https://translate.argosopentech.com/",
+                    "endpoints": {
+                        "translate": { "name": "translate", "params": { "q": null, "source": null, "target": null, "format": "text", "api_key": "" } }
+                    }
+                },
+                "translate.terraprint.co": {
+                    "name": "translate.terraprint.co",
+                    "http": { 
+                        "method": "POST",
+                        "headers": [ "Content-type: application/x-www-form-urlencoded" ]
+                    },
+                    "url": "https://translate.terraprint.co/",
+                    "endpoints": {
+                        "translate": { "name": "translate", "params": { "q": null, "source": null, "target": null, "format": "text", "api_key": "" } }
+                    }
+                },
+                "lt.vern.cc": {
+                    "name": "lt.vern.cc",
+                    "http": { 
+                        "method": "POST",
+                        "headers": [ "Content-type: application/x-www-form-urlencoded" ]
+                    },
+                    "url": "https://lt.vern.cc/",
+                    "endpoints": {
+                        "translate": { "name": "translate", "params": { "q": null, "source": null, "target": null, "format": "text", "api_key": "" } }
+                    }
+                },
+                "fortytwo-it.com": {
+                    "name": "fortytwo-it.com",
+                    "http": { 
+                        "method": "POST",
+                        "headers": [ "Content-type: application/x-www-form-urlencoded" ]
+                    },
+                    "url": "https://translate.fortytwo-it.com/",
+                    "endpoints": {
+                        "translate": { "name": "translate", "params": { "q": null, "source": null, "target": null, "format": "text" } }
+                    }
+                }
+            }
+        }
+    }
+}
