@@ -19,7 +19,7 @@ Just PHP.
 
 ### A Kunikida\AService will be represented like this:
 
-| Property | Description |
+| Property | Type | Description |
 | --- | --- | --- |
 | **name** | `string` |  |
 | **rModes** | `array` |  |
@@ -30,7 +30,7 @@ Just PHP.
 
 ### A Kunikida\Geo will be represented like this:
 
-| Property | Description |
+| Property | Type | Description |
 | --- | --- | --- |
 | **name** | `string` |  |
 | **rModes** | `array` |  |
@@ -42,7 +42,7 @@ Just PHP.
 
 ### A Kunikida\Translate will be represented like this:
 
-| Property | Description |
+| Property | Type | Description |
 | --- | --- | --- |
 | **name** | `string` |  |
 | **rModes** | `array` |  |
